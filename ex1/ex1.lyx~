@@ -1,0 +1,2838 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 3cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מבוא למערכות לומדות- תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Author
+מגישה זוהר בוחניק
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+311142293
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+חשבו את ההטלה של 
+\begin_inset Formula $v=\begin{pmatrix}1\\
+2\\
+3\\
+4
+\end{pmatrix}$
+\end_inset
+
+ על הוקטור 
+\begin_inset Formula $w=\begin{pmatrix}0\\
+-1\\
+1\\
+2
+\end{pmatrix}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נחשב: 
+\begin_inset Formula $\left\langle v,w\right\rangle =0-2+3+8=9$
+\end_inset
+
+ 
+\begin_inset Formula $\left|w\right|^{2}=0+\left(-1\right)^{2}+1^{2}+2^{2}=6$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לכן ההטלה המתבקשת היא הוקטור- 
+\begin_inset Formula $\frac{9}{6}\begin{pmatrix}0\\
+-1\\
+1\\
+2
+\end{pmatrix}=\begin{pmatrix}0\\
+-\frac{3}{2}\\
+\frac{3}{2}\\
+3
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+חשבו את ההטלה של 
+\begin_inset Formula $v=\begin{pmatrix}1\\
+2\\
+3\\
+4
+\end{pmatrix}$
+\end_inset
+
+ על הוקטור 
+\begin_inset Formula $w=\begin{pmatrix}1\\
+0\\
+1\\
+-1
+\end{pmatrix}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נחשב: 
+\begin_inset Formula $\left\langle v,w\right\rangle =1+0+3-4=0$
+\end_inset
+
+, כלומר קיבלנו כי הוקטורים 
+\begin_inset Formula $w,v$
+\end_inset
+
+ מאונכים אזי ההטלה המתבקשת היא 
+\begin_inset Formula $\begin{pmatrix}0\\
+0\\
+0\\
+0
+\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+בעבור 
+\begin_inset Formula $A=UDV^{T}$
+\end_inset
+
+ נייצג את המטריצה 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ באופן הבא:
+\begin_inset Formula 
+\[
+A^{-1}=\left(UDV^{T}\right)^{-1}=\left(V^{T}\right)^{-1}D^{-1}U^{-1}=VD^{-1}U^{T}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כאשר 
+\begin_inset Formula $D^{-1}=diag(\frac{1}{\sigma_{1}},....,\frac{1}{\sigma_{n}})$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+אם נדע את צורת ה
+\begin_inset Formula $SVD$
+\end_inset
+
+ של המטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+ נוכל למצוא את 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ בקלות על ידי חישוב 
+\begin_inset Formula $D^{-1}$
+\end_inset
+
+ בצורה הנ"ל ואז מכפלת המטריצות 
+\begin_inset Formula $VD^{-1}U^{T}$
+\end_inset
+
+ תביא לתוצאה הסופית המבוקשת.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+מצאו את ה 
+\begin_inset Formula $SVD$
+\end_inset
+
+ של 
+\begin_inset Formula $C=\begin{pmatrix}5 & 5\\
+-1 & 7
+\end{pmatrix}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+ראשית נחשב את המטריצה 
+\begin_inset Formula $C^{T}C$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}5 & -1\\
+5 & 7
+\end{pmatrix}\begin{pmatrix}5 & 5\\
+-1 & 7
+\end{pmatrix}=\begin{pmatrix}26 & 18\\
+18 & 74
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כעת נמצא את הערכים העצמיים של המטריצה 
+\begin_inset Formula $C^{T}C$
+\end_inset
+
+:
+\begin_inset Formula $detC^{T}\left(CC-\lambda I\right)=det\left(\begin{pmatrix}26-\lambda & 18\\
+18 & 74-\lambda
+\end{pmatrix}\right)=\left(26-\lambda\right)\left(74-\lambda\right)-18^{2}=λ^{2}-100λ+1600=\left(\lambda-20\right)\left(\lambda-80\right)=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כלומר קיבלנו כי 
+\begin_inset Formula $\lambda_{1}=20,\lambda_{2}=80$
+\end_inset
+
+ הערכים העצמיים של 
+\begin_inset Formula $C^{T}C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נחשב את הוקטורים העצמיים, זאת בעזרת מציאת בסיסים למרחבים העצמיים של
+ 
+\begin_inset Formula $C^{T}C$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+C^{T}C-20I=\begin{pmatrix}6 & 18\\
+18 & 54
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נשים לב כי הטור השני הוא פי שלוש מהטור הראשון ולכן 
+\begin_inset Formula $v_{1}=\begin{pmatrix}-3\\
+1
+\end{pmatrix}$
+\end_inset
+
+ הוא בסיס מתאים עבור 
+\begin_inset Formula $\lambda=20$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C^{T}C-80I=\begin{pmatrix}-54 & 18\\
+18 & -6
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+באופן דומה הטור הראשון הוא פי שלוש בערך מוחלט מהטור השני ולכן 
+\begin_inset Formula $v_{2}=\begin{pmatrix}1\\
+3
+\end{pmatrix}$
+\end_inset
+
+ הוא בסיס מתאים עבור 
+\begin_inset Formula $\lambda=80$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ננרמל את הוקטורים
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+||v_{1}||=\sqrt{\left\langle v_{1},v_{1}\right\rangle }=\sqrt{9+1}=\sqrt{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+||v_{2}||=\sqrt{\left\langle v_{2},v_{2}\right\rangle }=\sqrt{9+1}=\sqrt{10}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V=\boldsymbol{\begin{pmatrix}\frac{-3}{\sqrt{10}} & \frac{1}{\sqrt{10}}\\
+\frac{1}{\sqrt{10}} & \frac{3}{\sqrt{10}}
+\end{pmatrix}=V^{T}}
+\]
+
+\end_inset
+
+הערכים הסינגוליים של 
+\begin_inset Formula $C^{T}C$
+\end_inset
+
+ הם 
+\begin_inset Formula $\sigma_{1}=\sqrt{20},\sigma_{2}=\sqrt{80}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+\boldsymbol{\Sigma=\begin{pmatrix}\sqrt{20} & 0\\
+0 & \sqrt{80}
+\end{pmatrix}}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לבסוף נחשב את 
+\begin_inset Formula $U$
+\end_inset
+
+ בעזרת 
+\begin_inset Formula $CV=U\Sigma$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+CV=\begin{pmatrix}5 & 5\\
+-1 & 7
+\end{pmatrix}\begin{pmatrix}\frac{-3}{\sqrt{10}} & \frac{1}{\sqrt{10}}\\
+\frac{1}{\sqrt{10}} & \frac{3}{\sqrt{10}}
+\end{pmatrix}=\begin{pmatrix}\frac{-10}{\sqrt{10}} & \frac{20}{\sqrt{10}}\\
+\frac{10}{\sqrt{10}} & \frac{20}{\sqrt{10}}
+\end{pmatrix}=\begin{pmatrix}-\sqrt{10} & 2\cdot\sqrt{10}\\
+\sqrt{10} & 2\cdot\sqrt{10}
+\end{pmatrix}=U\Sigma=U\cdot\begin{pmatrix}\sqrt{20} & 0\\
+0 & \sqrt{80}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כלומר:
+\begin_inset Formula 
+\[
+\begin{pmatrix}-\sqrt{10} & 2\cdot\sqrt{10}\\
+\sqrt{10} & 2\cdot\sqrt{10}
+\end{pmatrix}=U\cdot\begin{pmatrix}\sqrt{20} & 0\\
+0 & \sqrt{80}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{11}\cdot\sqrt{20}=-\sqrt{10}\Rightarrow x_{11}=-\frac{\sqrt{10}}{\sqrt{20}}=-\frac{1}{\sqrt{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{12}\cdot\sqrt{80}=2\sqrt{10}\Rightarrow x_{12}=\frac{2\sqrt{10}}{\sqrt{80}}=\frac{1}{\sqrt{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{21}\cdot\sqrt{20}=\sqrt{10}\Rightarrow x_{21}=\frac{1}{\sqrt{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{22}\cdot\sqrt{80}=2\sqrt{10}\Rightarrow x_{22}=\frac{2\sqrt{10}}{\sqrt{80}}=\frac{1}{\sqrt{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Longrightarrow\boldsymbol{U=\begin{pmatrix}-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}
+\end{pmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A\in M_{m\times n}\left(\mathbb{R}\right)$
+\end_inset
+
+ מדרגה 
+\begin_inset Formula $r$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $C_{0}=A^{T}A$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $b_{k+1}=\frac{C_{0}b_{k}}{\left||C_{0}b_{k}|\right|}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ מאותחל רנדומלית.
+ צריך להראות כי 
+\begin_inset Formula $lim_{k\rightarrow\infty}b_{k}=v_{1}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ הוא וקטור סינגולרי הימני ביותר התואם לערך הסינגולרי הגדול ביותר של 
+\begin_inset Formula $C_{0}$
+\end_inset
+
+.
+ ניתן להניח כי 
+\begin_inset Formula $\lambda_{1}>\lambda_{2}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\lambda_{1},...,\lambda_{n}$
+\end_inset
+
+ הערכים העצמיים של 
+\begin_inset Formula $C_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $v_{1},...,v_{n}$
+\end_inset
+
+ ו"ע של 
+\begin_inset Formula $C_{0}$
+\end_inset
+
+, וכי 
+\begin_inset Formula $b_{0}=\sum_{i=1}^{n}a_{i}v_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1}\neq0$
+\end_inset
+
+.
+ נייצג את 
+\begin_inset Formula $C_{0}$
+\end_inset
+
+ על ידי 
+\begin_inset Formula $EVD$
+\end_inset
+
+: 
+\begin_inset Formula $C_{0}=VDV^{T}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נמצא את 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ בעזרת 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+b_{1}=\frac{C_{0}b_{0}}{\left||C_{0}b_{0}|\right|}=\frac{VDV^{T}\cdot\sum_{i=1}^{n}a_{i}v_{i}}{\left|\left|VDV^{T}\cdot\sum_{i=1}^{n}a_{i}v_{i}\right|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+VDV^{T}\cdot\sum_{i=1}^{n}a_{i}v_{i}=V\begin{bmatrix}\lambda_{1}\\
+\\
+ &  & \ddots\\
+\\
+ &  &  &  & \lambda_{n}
+\end{bmatrix}V^{T}\cdot V\cdot\begin{bmatrix}a_{1}\\
+\\
+\vdots\\
+\\
+a_{n}
+\end{bmatrix}=V\begin{bmatrix}\lambda_{1}\\
+\\
+ &  & \ddots\\
+\\
+ &  &  &  & \lambda_{n}
+\end{bmatrix}\cdot I_{n}\cdot\begin{bmatrix}a_{1}\\
+\\
+\vdots\\
+\\
+a_{n}
+\end{bmatrix}=V\cdot\begin{bmatrix}\lambda_{1}a_{1}\\
+\\
+\vdots\\
+\\
+\lambda_{n}a_{n}
+\end{bmatrix}=\sum_{i=1}^{n}\lambda_{i}\cdot v_{i}\cdot a_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כלומר קיבלנו:
+\begin_inset Formula 
+\[
+b_{1}=\frac{\sum_{i=1}^{n}\lambda_{i}\cdot v_{i}\cdot a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}\cdot v_{i}\cdot a_{i}\right|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+טענה:
+\series default
+ לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+b_{k}=\frac{\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נראה באינדוקציה:
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+בסיס
+\bar default
+- ראינו כי 
+\begin_inset Formula 
+\[
+b_{1}=\frac{\sum_{i=1}^{n}\lambda_{i}\cdot v_{i}\cdot a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}\cdot v_{i}\cdot a_{i}\right|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+צעד
+\bar default
+- נניח עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $k+1$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+מהנחת האינדוקציה מתקיים:
+\begin_inset Formula 
+\[
+b_{k}=\frac{\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לכן נציב:
+\begin_inset Formula 
+\[
+b_{k+1}=\frac{C_{0}b_{k}}{\left||C_{0}b_{k}|\right|}=\frac{VDV^{T}\cdot b_{k}}{\left||VDV^{T}\cdot b_{k}|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מתקיים-
+\begin_inset Formula 
+\[
+C_{0}b_{k}=VDV^{T}\cdot b_{k}=VDV^{T}\cdot\frac{\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}=\frac{VDV^{T}\cdot V\cdot\begin{bmatrix}\lambda_{1}^{k}a_{1}\\
+\\
+\vdots\\
+\\
+\lambda_{n}^{k}a_{n}
+\end{bmatrix}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}=\frac{V\cdot\begin{bmatrix}\lambda_{1}\\
+\\
+ &  & \ddots\\
+\\
+ &  &  &  & \lambda_{n}
+\end{bmatrix}\cdot\begin{bmatrix}\lambda_{1}^{k}a_{1}\\
+\\
+\vdots\\
+\\
+\lambda_{n}^{k}a_{n}
+\end{bmatrix}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{V\cdot\begin{bmatrix}\lambda_{1}^{k+1}a_{1}\\
+\\
+\vdots\\
+\\
+\lambda_{n}^{k+1}a_{n}
+\end{bmatrix}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}=\frac{\sum_{i=1}^{n}v_{i}\lambda_{i}^{k+1}a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נשים לב כי 
+\begin_inset Formula 
+\[
+b_{k+1}=\frac{\frac{\sum_{i=1}^{n}v_{i}\lambda_{i}^{k+1}a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}}{\left|\left|\frac{\sum_{i=1}^{n}v_{i}\lambda_{i}^{k+1}a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}\right|\right|}=\frac{\frac{\sum_{i=1}^{n}v_{i}\lambda_{i}^{k+1}a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}}{\frac{1}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}\cdot\left|\left|\sum_{i=1}^{n}v_{i}\lambda_{i}^{k+1}a_{i}\right|\right|}=\frac{\sum_{i=1}^{n}v_{i}\lambda_{i}^{k+1}a_{i}}{\left|\left|\sum_{i=1}^{n}v_{i}\lambda_{i}^{k+1}a_{i}\right|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כלומר הוכחנו את צעד האינדוקציה כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+כעת נשתמש בביטוי הזה של 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+ על מנת לחשב את הגבול המבוקש:
+\begin_inset Formula 
+\[
+lim_{k\rightarrow\infty}b_{k}=lim_{k\rightarrow\infty}\frac{\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}=lim_{k\rightarrow\infty}\frac{V\cdot\begin{bmatrix}\lambda_{1}^{k}a_{1}\\
+\\
+\vdots\\
+\\
+\lambda_{n}^{k}a_{n}
+\end{bmatrix}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=lim_{k\rightarrow\infty}\frac{V\cdot\lambda_{1}^{k}\cdot\begin{bmatrix}1\\
+ & \frac{\lambda_{2}^{k}}{\lambda_{1}^{k}}\\
+ &  & \ddots\\
+\\
+ &  &  &  & \frac{\lambda_{n}^{k}}{\lambda_{1}^{k}}
+\end{bmatrix}\begin{bmatrix}a_{1}\\
+\\
+\vdots\\
+\\
+a_{n}
+\end{bmatrix}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula 
+\[
+lim_{k\rightarrow\infty}\begin{bmatrix}1\\
+ & \frac{\lambda_{2}^{k}}{\lambda_{1}^{k}}\\
+ &  & \ddots\\
+\\
+ &  &  &  & \frac{\lambda_{n}^{k}}{\lambda_{1}^{k}}
+\end{bmatrix}=\begin{bmatrix}1\\
+ & 0\\
+ &  & \ddots\\
+\\
+ &  &  &  & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כי 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ הוא הערך העצמי הכי גדול ולכן לכל 
+\begin_inset Formula $i\neq1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $lim_{k\rightarrow\infty}\left(\frac{\lambda_{i}}{\lambda_{1}}\right)^{k}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לכן בתצוגה 
+\begin_inset Formula $\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}$
+\end_inset
+
+ ניתן לראות כי כאשר 
+\begin_inset Formula $k\rightarrow\infty$
+\end_inset
+
+ אנו מקבלים כי: 
+\begin_inset Formula $\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\rightarrow v_{1}a_{1}\lambda_{1}^{k}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מכאן נובע לבסוף- 
+\begin_inset Formula 
+\[
+lim_{k\rightarrow\infty}b_{k}=lim_{k\rightarrow\infty}\frac{\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}}{\left|\left|\sum_{i=1}^{n}\lambda_{i}^{k}\cdot v_{i}\cdot a_{i}\right|\right|}=lim_{k\rightarrow\infty}\frac{v_{1}a_{1}\lambda_{1}^{k}}{\left||v_{1}a_{1}\lambda_{1}^{k}|\right|}=v_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+זאת כיוון ש 
+\begin_inset Formula $\left|\left|v_{1}\right|\right|=1$
+\end_inset
+
+וכיוון ש 
+\begin_inset Formula $lim_{k\rightarrow\infty}\frac{a_{1}\lambda_{1}^{k}}{\left|a_{1}\right|\left|\lambda_{1}^{k}\right|}=1$
+\end_inset
+
+ )בהנחה שהערכים חיוביים(.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+14
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $V$
+\end_inset
+
+ תת מרחב של 
+\begin_inset Formula $\mathbb{R^{d}}$
+\end_inset
+
+ ממימד 
+\begin_inset Formula $k$
+\end_inset
+
+, ויהי 
+\begin_inset Formula $v_{1},...,v_{k}\in\mathbb{R}^{d}$
+\end_inset
+
+ בסיס אורתונורמלי של 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $P=\sum_{i=1}^{k}v_{i}v_{i}^{T}$
+\end_inset
+
+ מטריצת הטלה לתת המרחב 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+צ.ל- 
+\begin_inset Formula $P$
+\end_inset
+
+ סימטרית.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+הוכחה
+\bar default
+- ראשית נשים לב כי 
+\begin_inset Formula $v_{i}v_{i}^{T}$
+\end_inset
+
+ היא מטריצה סימטרית לכל 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ זאת כיוון שמתקיים 
+\begin_inset Formula $\left(v_{i}v_{i}^{T}\right)^{T}=\left(v_{i}^{T}\right)^{T}v_{i}^{T}=v_{i}v_{i}^{T}$
+\end_inset
+
+.
+ שנית, נשים לב כי 
+\begin_inset Formula $P$
+\end_inset
+
+ היא סכום של מטריצות סימטריות וסכום של שתי מטריצות סימטריות שומר על תכונת
+ הסימטריה: יהיו 
+\begin_inset Formula $A,B$
+\end_inset
+
+ סימטריות אזי: 
+\begin_inset Formula $\left(A+B\right)^{T}=A^{T}+B^{T}=A+B$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $A+B$
+\end_inset
+
+ סימטרית.
+ מכאן 
+\begin_inset Formula $P$
+\end_inset
+
+ סימטרית.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+צ.ל 
+\begin_inset Formula $v_{1},...v_{k}$
+\end_inset
+
+ הם וקטורים עצמיים של 
+\begin_inset Formula $P$
+\end_inset
+
+ עם ערך עצמי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+.
+ כלומר צריך להראות כי לכל 
+\begin_inset Formula $i\in\left[k\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P\cdot v_{i}=v_{i}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+P\cdot v_{i}=\left(\sum_{i=1}^{k}v_{i}v_{i}^{T}\right)\cdot v_{i}=\sum_{i=1}^{k}v_{i}v_{i}^{T}v_{i}=v_{1}v_{1}^{T}v_{i}+v_{2}v_{2}^{T}v_{i}+....+v_{i}v_{i}^{T}v_{i}+...+v_{k}v_{k}^{T}v_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כיוון ש 
+\begin_inset Formula $v_{i}\perp v_{j}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+ אזי המכפלה 
+\begin_inset Formula $v_{j}^{T}v_{i}=\bar{0}$
+\end_inset
+
+, לכן נקבל סה"כ כי 
+\begin_inset Formula 
+\[
+P\cdot v_{i}=v_{i}v_{i}^{T}v_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אמנם, כיוון ש 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ הוא אורתונורמלי הנורמה שלו שווה ל
+\begin_inset Formula $1$
+\end_inset
+
+, והרי 
+\begin_inset Formula $v_{i}^{T}v_{i}=\left||v_{i}|\right|^{2}=1$
+\end_inset
+
+, כלומר קיבלנו 
+\begin_inset Formula $P\cdot v_{i}=v_{i}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+16
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+כתבו 
+\begin_inset Formula $EVD$
+\end_inset
+
+ אפשרי ל-
+\begin_inset Formula $P$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+ראשית ניקח את הבסיס 
+\begin_inset Formula $v_{1},..,v_{k}$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+ ונשלים אותו לבסיס אורתונומלי של 
+\begin_inset Formula $\mathbb{R}^{d}$
+\end_inset
+
+ 
+\begin_inset Formula $v_{1}=u_{1},...,v_{k}=u_{k},u_{k+1},..,u_{d}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $V=\begin{bmatrix}| & | &  &  &  & |\\
+| & | &  &  &  & |\\
+u_{1} & u_{2} &  & \cdots &  & u_{d}\\
+| & | &  &  &  & |\\
+| & | &  &  &  & |
+\end{bmatrix}$
+\end_inset
+
+ מטריצה אורתוגונלית, אזי 
+\begin_inset Formula $P=VDV^{T}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $D=\begin{bmatrix}1\\
+ & \ddots\\
+ &  & 1\\
+ &  &  & 0\\
+ &  &  &  & \ddots\\
+ &  &  &  &  & 0
+\end{bmatrix}\in M_{d\times d}\left(\mathbb{R}\right)$
+\end_inset
+
+ )מספר האחדות הוא לפחות 
+\begin_inset Formula $k$
+\end_inset
+
+, והשאר אפסים(.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+17
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+הראו כי 
+\begin_inset Formula $P^{2}=PP^{T}=P^{T}P=P$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+ראשית 
+\begin_inset Formula $P$
+\end_inset
+
+ סימטרית, לכן 
+\begin_inset Formula $P=P^{T}$
+\end_inset
+
+, מכאן 
+\begin_inset Formula $P^{2}=PP=P^{T}P=PP^{T}$
+\end_inset
+
+.
+ נותר להראות כי 
+\begin_inset Formula $P=P^{2}$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $P$
+\end_inset
+
+ היא מטריצת הטלה, מהגדרה לאחר שמבצעים הטלה על וקטור כלשהו, אם נבצע שוב הטלה
+ לא יקרה כלום, כלומר להטיל פעמיים זה בדיוק כמו להטיל פעם אחת ולכן 
+\begin_inset Formula $P=P^{2}$
+\end_inset
+
+.
+ בנוסף, בעזרת טענה מסעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+18
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ניתן להסיק את השיוויון:
+\begin_inset Formula 
+\[
+\left(I-P\right)P=\bar{0}\Rightarrow IP-P^{2}=0\Rightarrow IP=P^{2}\Rightarrow P=P^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+19
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+הראו כי לכל 
+\begin_inset Formula $x\in V$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $Px=x$
+\end_inset
+
+.
+ בשאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ראינו כי כל וקטור בבסיס 
+\begin_inset Formula $v_{1},..,v_{k}$
+\end_inset
+
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $Pv_{i}=v_{i}$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $x\in V$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x=a_{1}v_{1}+...+a_{k}v_{k}$
+\end_inset
+
+ בעבור 
+\begin_inset Formula $a_{1},...,a_{k}\in\mathbb{R}$
+\end_inset
+
+ סקלרים כלשהם.
+ לכן 
+\begin_inset Formula 
+\[
+Px=P\cdot\left(a_{1}v_{1}+...+a_{k}v_{k}\right)=P\cdot a_{1}v_{1}+...+P\cdot a_{k}v_{k}=a_{1}\cdot\left(P\cdot v_{1}\right)+...+a_{k}\cdot\left(P\cdot v_{k}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=a_{1}\cdot\left(v_{1}\right)+...+a_{k}\cdot\left(v_{k}\right)=x
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כנדרש בשאלה.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+20
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+נחשב את היעקוביאן של 
+\begin_inset Formula 
+\[
+f\left(\sigma\right)=U\cdot diag\left(\sigma\right)U^{T}x
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula 
+\[
+\sigma=\begin{bmatrix}\lambda_{1}\\
+\\
+\vdots\\
+\\
+\lambda_{n}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+U\cdot diag\left(\sigma\right)U^{T}x=\begin{bmatrix}| &  &  &  & |\\
+| &  &  &  & |\\
+u_{1} &  & \cdots &  & u_{n}\\
+| &  &  &  & |\\
+| &  &  &  & |
+\end{bmatrix}\begin{bmatrix}\lambda_{1}\\
+\\
+ &  & \ddots\\
+\\
+ &  &  &  & \lambda_{n}
+\end{bmatrix}\begin{bmatrix}- & - & u_{1} & - & -\\
+\\
+ &  & \vdots\\
+\\
+- & - & u_{n} & - & -
+\end{bmatrix}\begin{bmatrix}x_{1}\\
+\\
+\vdots\\
+\\
+x_{n}
+\end{bmatrix}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\begin{bmatrix}| &  &  &  & |\\
+| &  &  &  & |\\
+u_{1} &  & \cdots &  & u_{n}\\
+| &  &  &  & |\\
+| &  &  &  & |
+\end{bmatrix}\begin{bmatrix}\lambda_{1}\\
+\\
+ &  & \ddots\\
+\\
+ &  &  &  & \lambda_{n}
+\end{bmatrix}\begin{bmatrix}\left\langle u_{1},x\right\rangle \\
+\\
+\vdots\\
+\\
+\left\langle u_{n},x\right\rangle 
+\end{bmatrix}=\begin{bmatrix}| &  &  &  & |\\
+| &  &  &  & |\\
+u_{1} &  & \cdots &  & u_{n}\\
+| &  &  &  & |\\
+| &  &  &  & |
+\end{bmatrix}\begin{bmatrix}\lambda_{1}\cdot\left\langle u_{1},x\right\rangle \\
+\\
+\vdots\\
+\\
+\lambda_{n}\cdot\left\langle u_{n},x\right\rangle 
+\end{bmatrix}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\begin{bmatrix}| &  &  &  & |\\
+| &  &  &  & |\\
+u_{1} &  & \cdots &  & u_{n}\\
+| &  &  &  & |\\
+| &  &  &  & |
+\end{bmatrix}\left(\begin{bmatrix}\lambda_{1}\cdot\left\langle u_{1},x\right\rangle \\
+0\\
+\vdots\\
+\\
+0
+\end{bmatrix}+....+\begin{bmatrix}0\\
+\\
+\vdots\\
+0\\
+\lambda_{n}\cdot\left\langle u_{n},x\right\rangle 
+\end{bmatrix}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\lambda_{1}\cdot\left\langle u_{1},x\right\rangle \cdot\begin{bmatrix}|\\
+|\\
+u_{1}\\
+|\\
+|
+\end{bmatrix}+.....+\lambda_{n}\cdot\left\langle u_{n},x\right\rangle \begin{bmatrix}|\\
+|\\
+u_{n}\\
+|\\
+|
+\end{bmatrix}=\begin{bmatrix}\sum_{i=1}^{n}\lambda_{i}\cdot\left\langle u_{i},x\right\rangle \left[u_{i}\right]_{\boldsymbol{1}}\\
+\\
+\vdots\\
+\\
+\sum_{i=1}^{n}\lambda_{i}\cdot\left\langle u_{i},x\right\rangle \left[u_{i}\right]_{\boldsymbol{n}}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+קיבלנו בעצם 
+\begin_inset Formula $n$
+\end_inset
+
+ פונקציות 
+\begin_inset Formula $f_{j}:\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $j\in\left[n\right]$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f_{j}\left(\sigma\right)=\sum_{i=1}^{n}\lambda_{i}\cdot\left\langle u_{i},x\right\rangle \left[u_{i}\right]_{\boldsymbol{j}}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נחשב את הגרדיאנט של 
+\begin_inset Formula $f_{j}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{\partial f_{j}\left(\sigma\right)}{\partial\lambda_{k}}=\left\langle u_{k},x\right\rangle \left[u_{k}\right]_{\boldsymbol{j}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\nabla f_{j}\left(\sigma\right)=\begin{bmatrix}\left\langle u_{1},x\right\rangle \left[u_{1}\right]_{\boldsymbol{j}}\\
+\\
+\vdots\\
+\\
+\left\langle u_{n},x\right\rangle \left[u_{n}\right]_{\boldsymbol{j}}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לכן לבסוף נקבל את היעקוביאן הבא:
+\begin_inset Formula 
+\[
+\begin{bmatrix}\left\langle u_{1},x\right\rangle \left[u_{1}\right]_{1} &  & \cdots &  & \left\langle u_{n},x\right\rangle \left[u_{n}\right]_{1}\\
+\\
+ &  & \vdots\\
+\\
+\left\langle u_{1},x\right\rangle \left[u_{1}\right]_{n} &  & \cdots &  & \left\langle u_{n},x\right\rangle \left[u_{n}\right]_{n}
+\end{bmatrix}=\begin{bmatrix} &  & \left(\nabla f_{1}\left(\sigma\right)\right)^{T}\\
+\\
+ &  & \vdots\\
+\\
+ &  & \left(\nabla f_{n}\left(\sigma\right)\right)^{T}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+21
+\numeric off
+: 
+\end_layout
+
+\begin_layout Standard
+מתקיים 
+\begin_inset Formula 
+\[
+f\left(\sigma\right)=U\cdot diag\left(\sigma\right)\cdot U^{T}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+h\left(\sigma\right)=\frac{1}{2}\left|\left|f\left(\sigma\right)-y\right|\right|^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+צריך לחשב את הגרדיאנט של 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $g\left(\bar{u}\right)=\frac{1}{2}\left|\left|\bar{u}-y\right|\right|^{2}$
+\end_inset
+
+ 
+\begin_inset Formula $g:\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $h=g\circ f\left(\sigma\right)$
+\end_inset
+
+ ומכלל השרשרת 
+\begin_inset Formula $J_{\sigma}\left(g\circ f\right)=J_{f\left(\sigma\right)}\left(g\right)\cdot J_{\sigma}\left(f\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נשים לב כי את הגרדיאנט של 
+\begin_inset Formula $g$
+\end_inset
+
+ אנו מכירים מהכיתה כלומר 
+\begin_inset Formula $\Delta g\left(u\right)=2\cdot\frac{1}{2}\left(\bar{u}-y\right)^{T}=\left(\bar{u}-y\right)^{T}$
+\end_inset
+
+, לכן
+\begin_inset Formula 
+\[
+J_{\sigma}\left(g\circ f\right)=J_{f\left(\sigma\right)}\left(g\right)\cdot J_{\sigma}\left(f\right)=\left(\underset{f\left(\sigma\right)}{\underbrace{U\cdot diag\left(\sigma\right)\cdot U^{T}x}}-y\right)^{T}\cdot\begin{bmatrix}\left\langle u_{1},x\right\rangle \left[u_{1}\right]_{1} &  & \cdots &  & \left\langle u_{n},x\right\rangle \left[u_{n}\right]_{1}\\
+\\
+ &  & \vdots\\
+\\
+\left\langle u_{1},x\right\rangle \left[u_{1}\right]_{n} &  & \cdots &  & \left\langle u_{n},x\right\rangle \left[u_{n}\right]_{n}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+22
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+נמשיך את החישוב עבור 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+g\left(z\right)_{j}=\frac{e^{z_{j}}}{\sum_{k=1}^{K}e^{z_{k}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial S_{i}}{\partial a_{j}}=\frac{-e^{z_{i}}\cdot e^{z_{j}}}{\left(\sum_{k=1}^{K}e^{z_{k}}\right)^{2}}=-\frac{e^{z_{i}}}{\sum_{k=1}^{K}e^{z_{k}}}\cdot\frac{e^{z_{j}}}{\sum_{k=1}^{K}e^{z_{k}}}=-S_{i}\cdot S_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+23
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted29.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בבחירה של נקודות רנדומליות קיבלנו את הגרף הנ"ל
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+24
+\numeric off
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted30.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציג את מטריצת ה
+\begin_inset Formula $cov$
+\end_inset
+
+ בשתי הצורות:
+\begin_inset Newline newline
+\end_inset
+
+אנליטית-
+\begin_inset Formula 
+\[
+SCS^{T}=\begin{bmatrix}0.01 & 0 & 0\\
+0 & 0.25 & 0\\
+0 & 0 & 4
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נומרית-
+\begin_inset Formula 
+\[
+\hat{C}=\frac{1}{n-1}\sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)\left(X_{i}-\bar{X}\right)^{T}=\frac{X\cdot X^{T}}{50000-1}=
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted34.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נראה כי עדיין אין תלות בין ה
+\begin_inset Formula $x$
+\end_inset
+
+ ה
+\begin_inset Formula $y$
+\end_inset
+
+ וה- 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ אין השפעה של עליית ה- 
+\begin_inset Formula $x$
+\end_inset
+
+ על ערכי ה
+\begin_inset Formula $y-$
+\end_inset
+
+ או 
+\begin_inset Formula $z$
+\end_inset
+
+ בצורה בולטת.
+ ניתן לראות כי מטריצת ה
+\begin_inset Formula $cov$
+\end_inset
+
+ אלכסונית, כלומר המשתנים המקריים בלתי מתואמים.
+ בהצגה נומרית קיבלנו ערכים מאוד דומים למטריצת ה
+\begin_inset Formula $cov$
+\end_inset
+
+ בחישוב האנליטי.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+25
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted31.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נציג את מטריצת ה
+\begin_inset Formula $cov$
+\end_inset
+
+ בשתי הצורות:
+\begin_inset Newline newline
+\end_inset
+
+אנליטית-
+\begin_inset Formula 
+\[
+RCR^{T}=
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted35.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נומרית-
+\begin_inset Formula 
+\[
+\hat{C}=\frac{1}{n-1}\sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)\left(X_{i}-\bar{X}\right)^{T}=\frac{X\cdot X^{T}}{50000-1}=
+\]
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted36.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נראה כי נוצרה תלות לינארית בין הפרמטרים לאחר הסיבוב.
+ נשים לב כי במטרצית ה-
+\begin_inset Formula $cov$
+\end_inset
+
+ השתנתה כך שניתן לראות כי המשתנים לא בלתי מתואמים.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+26
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted32.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בגרף אחרי השיטוח וביטול ציר ה 
+\begin_inset Formula $z$
+\end_inset
+
+ ניתן לראות כי הנקודות שמרו על הצורה הלינארית שלהן, גם בדו מימד.
+ הצפיפות המרכזית היא במרכז הגרף וככל שמתקרבים לקצוות הצפיפות יורדת
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+27
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted33.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לאחר שהוספנו את התנאי קיבלנו צורה מוקטנת של הגרף הקודם.
+ בעצם ניקינו את כל הנקודות שחורגות מהגבול הנתון ואז כששיטחנו את הנתונים
+ לדו מימד קיבלנו כיוון של הגרף הקודם שהיה ללא תנאים נוספים.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+28
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+ה
+\begin_inset Formula $m$
+\end_inset
+
+ שמצאנו היה 
+\begin_inset Formula 
+\[
+m=\lceil\frac{1}{2\varepsilon^{2}}\cdot log\left(\frac{4}{\delta}\right)\rceil
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+על ידי שימוש בחסמים של הופדינג וצ'בישב מצאנו את 
+\begin_inset Formula $m$
+\end_inset
+
+ כך שבשימוש באלגוריתם 
+\begin_inset Formula $A$
+\end_inset
+
+ שראינו בכיתה נוכל לקבוע את 
+\begin_inset Formula $p$
+\end_inset
+
+ בדיוק הקירוב 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+וביטחון 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+חסמנו בעצם את מורכבות המדגם 
+\begin_inset Formula $m\left(\varepsilon,\delta\right)$
+\end_inset
+
+ על ידי שני חסמים, בתחילה
+\begin_inset Formula $m\left(\varepsilon,\delta\right)\leq\lceil\frac{1}{4\cdot\varepsilon^{2}}\cdot\frac{1}{\delta}\rceil$
+\end_inset
+
+, ואז שיפרנו אותו לידי 
+\begin_inset Formula $m\left(\varepsilon,\delta\right)\leq\lceil\frac{1}{2\cdot\varepsilon^{2}}\cdot log\left(\frac{2}{\delta}\right)\rceil$
+\end_inset
+
+, ואז השתמשנו בחסמים להוכחה של האלגוריתם 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+29
+\numeric off
+:
+\begin_inset Newline newline
+\end_inset
+
+א.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted5.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נצפה שככל ש
+\begin_inset Formula $m$
+\end_inset
+
+ גדל כך התוצאות בין השורות השונות יהיו יותר דומות, כלומר הממוצע שיתקבל בכל
+ שורה יהיה דומה, וכך גם קיבלנו בגרף ככל ש
+\begin_inset Formula $m$
+\end_inset
+
+ גדל כך הממוצעים התקרבו אחד לשני, כלומר הערך המתקבל יותר מהימן.
+ 
+\end_layout
+
+\begin_layout Subsection*
+ב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted15.png
+	scale 80
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted16.png
+	scale 80
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted17.png
+	scale 90
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בגרפים האלו אנו רואים כי החסם של הופדינג ושל צ'בישב משתפר וקטן ככל ש
+\begin_inset Formula $m$
+\end_inset
+
+ גדל.
+ זאת כיוון שככל שמספר הדגימות עולה, כך נצפה שממוצע הדגימות יתקרב לתוחלת
+ וההסתברות שהמרחק הזה יהיה גדול מאפסילון קטנה יותר ויותר והחסמים יכולים
+ להבטיח גבול עליון על הטעות, אשר הוא קטן מ
+\numeric on
+1-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ויש לו משמעות.
+ בעבור 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ קטנים במיוחד ניתן לראות כי גם עבור 
+\begin_inset Formula $m=1000$
+\end_inset
+
+ עדיין החסמים של הופדינג וצ'בישב לא יכולים לספק חסם טוב יותר מ- 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ זה מאוד הגיוני כי ככל שאפסילון קטן כך קשה להבטיח שההסתברות שהמרחק בין הממוצע
+ לתוחלת יהיה קטן מאותו ה-
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+ג.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted22.png
+	scale 90
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted23.png
+	scale 90
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted24.png
+	scale 90
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted25.png
+	scale 90
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted26.png
+	scale 90
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+הגרפים הבאים מחשבים בנוסף בעבור כל 
+\begin_inset Formula $m$
+\end_inset
+
+ כמה מתוך הסבבים של הדגימות היו בממוצע רחוקים מהתוחלת של המשתנה המקרי של
+ הטלת המטבע יותר מ
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+ מה שנצפה לראות זה שככל ש
+\begin_inset Formula $m$
+\end_inset
+
+ גדל, כלומר אנו מסתכלים על יותר דגימות, לפי החוק של המספרים הגדולים נצפה
+ שהממוצע יתקרב לתוחלת כך שיהיו כמה שפחות סבבים שלא מקיימים את התנאי )רחוקים
+ מידי מ
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+(.
+ נראה כי ככל ש
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ יותר קטן כך קשה לקיים את התנאי ואחוז הדגימות שבממוצע רחוקות מהתוחלת גדל.
+ זה מאוד הגיוני כי ככל שאפסילון קטן כך הסבירות לטעות גדולה מאפסילון עולה.
+\end_layout
+
+\end_body
+\end_document

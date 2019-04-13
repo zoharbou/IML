@@ -1,0 +1,2973 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 3cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מבוא למערכות לומדות- תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Author
+מגישה- זוהר בוחניק
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+311142293
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+צ.ל 
+\begin_inset Formula $Im\left(A\right)=Ker\left(A^{T}\right)^{\perp}$
+\end_inset
+
+.
+ נראה זאת על ידי הכלה דו כיוונית.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+כיוון 
+\numeric on
+1
+\numeric off
+:
+\bar default
+
+\begin_inset Formula $Im\left(A\right)\subseteq Ker\left(A^{T}\right)^{\perp}$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $u\in Im\left(A\right)$
+\end_inset
+
+, נראה כי 
+\begin_inset Formula $u\in Ker\left(A^{T}\right)^{\perp}$
+\end_inset
+
+, כלומר כי מתקיים לכל 
+\begin_inset Formula $v\in Ker\left(A^{T}\right)$
+\end_inset
+
+ כי 
+\begin_inset Formula $\left\langle u,v\right\rangle =0$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+מכך ש 
+\begin_inset Formula $u\in Im\left(A\right)$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $Ax=u$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x$
+\end_inset
+
+ בתחום של ההעתקה של 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ נשים לב כי כל 
+\begin_inset Formula $v\in Ker\left(A^{T}\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A^{T}v=0$
+\end_inset
+
+.
+ לכן עבור 
+\begin_inset Formula $v$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\[
+\left\langle u,v\right\rangle =\left\langle Ax,v\right\rangle =\left(Ax\right)^{T}v=x^{T}A^{T}v=x^{T}0=0
+\]
+
+\end_inset
+
+
+\bar under
+כיוון 
+\numeric on
+2
+\numeric off
+:
+\bar default
+ 
+\begin_inset Formula $Ker\left(A^{T}\right)^{\perp}\subseteq Im\left(A\right)$
+\end_inset
+
+.
+ על מנת להוכיח את ההכלה הזאת נראה כי 
+\begin_inset Formula $Im\left(A\right)^{\perp}\subseteq Ker\left(A^{T}\right)$
+\end_inset
+
+ ואז נשתמש בלמה 
+\begin_inset Formula $A\subseteq B\Rightarrow B^{\perp}\subseteq A^{\perp}$
+\end_inset
+
+ )שלמדנו בלינארית(
+\begin_inset Newline newline
+\end_inset
+
+כדי להסיק 
+\begin_inset Formula $Ker\left(A^{T}\right)^{\perp}\subseteq\left(Im\left(A\right)^{\perp}\right)^{\perp}=Im\left(A\right)$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $x\in Im\left(A\right)^{\perp}$
+\end_inset
+
+ אזי לכל 
+\begin_inset Formula $v$
+\end_inset
+
+ בתחום של 
+\begin_inset Formula $A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left\langle Av,x\right\rangle =0$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left(Av\right)^{T}x=0=v^{T}A^{T}x$
+\end_inset
+
+ וכיוון שזה נכון לכל 
+\begin_inset Formula $v$
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $A^{T}x=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x\in Ker\left(A^{T}\right)$
+\end_inset
+
+.
+ אזי קיבלנו
+\begin_inset Formula $Im\left(A\right)^{\perp}\subseteq Ker\left(A^{T}\right)$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ראינו כי 
+\begin_inset Formula $Im\left(A\right)\subseteq Ker\left(A^{T}\right)^{\perp}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $Ker\left(A^{T}\right)^{\perp}\subseteq Im\left(A\right)$
+\end_inset
+
+, ולכן ניתן להסיק 
+\begin_inset Formula $Ker\left(A^{T}\right)^{\perp}=Im\left(A\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A\in\mathbb{R}^{d\times d}$
+\end_inset
+
+, מטריצה ריבועית ולא הפיכה.
+ יהיו 
+\begin_inset Formula $x,b\in\mathbb{R}^{d}$
+\end_inset
+
+ וקטורים.
+ צריך להוכיח: למערכת המשוואות 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ יש אינסוף פתרונות 
+\series bold
+אם"ם 
+\series default
+
+\begin_inset Formula $b\perp Ker\left(A^{T}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+כיוון 
+\numeric on
+1
+\numeric off
+:
+\bar default
+ נתון כי 
+\begin_inset Formula $b\perp Ker\left(A^{T}\right)$
+\end_inset
+
+, צ.ל למערכת 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ יש אינסוף פתרונות.
+ מהנתון 
+\begin_inset Formula $b\in Ker\left(A^{T}\right)^{\perp}$
+\end_inset
+
+, ולכן משאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נובע 
+\begin_inset Formula $b\in Im\left(A\right)$
+\end_inset
+
+, לכן למערכת 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ יש פתרון.
+ אמנם כיוון ש
+\begin_inset Formula $A$
+\end_inset
+
+ לא הפיכה נובע כי יש לצורה המצומצמת של 
+\begin_inset Formula $A$
+\end_inset
+
+ שורת אפסים ולכן יש לה מקדם חופשי.
+ מכך נובע כי יש למשוואה 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ אינסוף פתרונות.
+\bar under
+
+\begin_inset Newline newline
+\end_inset
+
+כיוון 
+\numeric on
+2
+\numeric off
+:
+\bar default
+ נתון כי למערכת 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ יש אינסוף פתרונות, צ.ל כי 
+\begin_inset Formula $b\perp Ker\left(A^{T}\right)$
+\end_inset
+
+.
+ מספיק להראות כי 
+\begin_inset Formula $b\in Im\left(A\right)$
+\end_inset
+
+ כיוון שראינו בשאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי 
+\begin_inset Formula $Ker\left(A^{T}\right)^{\perp}=Im\left(A\right)$
+\end_inset
+
+ ולכן אם 
+\begin_inset Formula $b\in Im\left(A\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $b\in Ker\left(A^{T}\right)^{\perp}$
+\end_inset
+
+ ו
+\begin_inset Formula $b\perp Ker\left(A^{T}\right)$
+\end_inset
+
+ כנדרש להוכיח.
+ מהנתון, למערכת 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ יש אינסוף פתרונות, לכן כמובן 
+\begin_inset Formula $b\in Im\left(A\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+נגדיר: 
+\begin_inset Formula $A=XX^{T}$
+\end_inset
+
+ ו
+\begin_inset Formula $b=Xy-$
+\end_inset
+
+, צריך להוכיח כי 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ יכולה להיות בעלת פתרון יחיד )כאשר 
+\begin_inset Formula $A$
+\end_inset
+
+ הפיכה(, או בעלת 
+\begin_inset Formula $\infty$
+\end_inset
+
+ פתרונות )אחרת(.
+\begin_inset Newline newline
+\end_inset
+
+ראשית, אם 
+\begin_inset Formula $A$
+\end_inset
+
+ הפיכה, אזי למערכת המשוואות הלינאריות 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ קיים פתרון לכל וקטור עמודה 
+\begin_inset Formula $b$
+\end_inset
+
+ מסדר 
+\begin_inset Formula $d$
+\end_inset
+
+ כאשר פתרון זה הוא יחיד )זאת מתכונות מטריצה הפיכה(.
+ שנית, אם 
+\begin_inset Formula $A$
+\end_inset
+
+ לא הפיכה, אזי נשתמש בלמה שהוכנו בשאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+- נראה כי 
+\begin_inset Formula $Xy=b\perp Ker\left(A^{T}\right)$
+\end_inset
+
+ ואז נסיק כי למשוואה 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ יש אינסוף פתרונות.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula $Ker\left(A^{T}\right)=Ker\left(\left(XX^{T}\right)^{T}\right)=Ker\left(XX^{T}\right)=Ker\left(X^{T}\right)$
+\end_inset
+
+, זאת שימוש בלמה שניתנה לנו בהוראות התרגיל.
+ לכל 
+\begin_inset Formula $v\in Ker\left(X^{T}\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\left\langle Xy,v\right\rangle =\left(Xy\right)^{T}v=y^{T}X^{T}v\underset{X^{T}v=0}{\underbrace{=}}0
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כלומר קיבלנו 
+\begin_inset Formula $Xy\perp Ker\left(A^{T}\right)$
+\end_inset
+
+ כנדרש.
+ 
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula $\boldsymbol{a}$
+\end_inset
+
+.
+ 
+\series default
+צריך להוכיח כי אם 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ היא הפיכה אזי 
+\begin_inset Formula 
+\[
+\left(XX^{T}\right)^{-1}=UD^{-1}U^{T}\,\,\,while\,D=\Sigma\Sigma^{T}\,\,and\,\,X=U\Sigma V^{T}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(XX^{T}\right)^{-1}=\left(\left(U\Sigma V^{T}\right)\cdot\left(U\Sigma V^{T}\right)^{T}\right)^{-1}=\left(\left(U\Sigma V^{T}\right)\cdot\left(V\Sigma^{T}U^{T}\right)\right)^{-1}=\left(U\Sigma I_{m}\Sigma^{T}U^{T}\right)^{-1}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left(U^{T}\right)^{-1}\left(\Sigma\Sigma^{T}\right)^{-1}U^{-1}\underset{U^{-1}=U^{T}}{\underbrace{=}}U\left(\Sigma\Sigma^{T}\right)^{-1}U^{T}=UD^{-1}U^{T}
+\]
+
+\end_inset
+
+כנדרש.
+
+\series bold
+ 
+\series default
+כעת נשתמש בזה כדי להראות 
+\begin_inset Formula $\left(XX^{T}\right)^{-1}X=X^{T\dagger}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left(XX^{T}\right)^{-1}X=UD^{-1}U^{T}X=U\left(\Sigma\Sigma^{T}\right)^{-1}U^{T}\left(U\Sigma V^{T}\right)=U\left(\Sigma\Sigma^{T}\right)^{-1}\Sigma V^{T}=U\Sigma^{\dagger T}V^{T}=X^{T\dagger}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+וזה נכון כי 
+\begin_inset Formula 
+\[
+\left(\Sigma\Sigma^{T}\right)^{-1}\Sigma=D^{-1}\Sigma=D^{\dagger}\Sigma=\Sigma^{\dagger T}
+\]
+
+\end_inset
+
+את השיוויון האחרון ראינו בתרגול, והשיוויון השני הוא מכך ש-
+\begin_inset Formula $D$
+\end_inset
+
+ ריבועית.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\boldsymbol{b}$
+\end_inset
+
+
+\series bold
+.
+ 
+\series default
+הראו כי 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ הפיכה אם"ם 
+\begin_inset Formula $span\left\{ x_{1},..,x_{m}\right\} =\mathbb{R}^{d}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+כיוון 
+\numeric on
+1
+\numeric off
+:
+\bar default
+ נתון 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ הפיכה, צ.ל כי
+\series bold
+ 
+\series default
+
+\begin_inset Formula $span\left\{ x_{1},..,x_{m}\right\} =\mathbb{R}^{d}$
+\end_inset
+
+.
+ נניח בשלילה כי מתקיים 
+\begin_inset Formula $span\left\{ x_{1},..,x_{m}\right\} \neq\mathbb{R}^{d}$
+\end_inset
+
+ אזי משיקולי מימדים נובע כי קיים 
+\begin_inset Formula $0\neq v\in\mathbb{R}^{d}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+בת"ל ב- 
+\begin_inset Formula $x_{1},..,x_{m}$
+\end_inset
+
+ המקיים כי - 
+\begin_inset Formula $v\in span\left\{ x_{1},..x_{m}\right\} ^{\perp}$
+\end_inset
+
+ כלומר קיבלנו: 
+\begin_inset Formula 
+\[
+X^{T}v=\begin{bmatrix}\left\langle x_{1},v\right\rangle \\
+\\
+\vdots\\
+\\
+\left\langle x_{m},v\right\rangle 
+\end{bmatrix}=0\Rightarrow v\in Ker\left(X^{T}\right)\Rightarrow v\in Ker\left(XX^{T}\right)\Rightarrow XX^{T}\,is\,not\,invertible
+\]
+
+\end_inset
+
+ וזאת סתירה לנתון כי 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ הפיכה.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+כיוון 
+\numeric on
+2
+\numeric off
+:
+\bar default
+ נתון כי 
+\begin_inset Formula $span\left\{ x_{1},..,x_{m}\right\} =\mathbb{R}^{d}$
+\end_inset
+
+, צ.ל כי 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ הפיכה.
+ כדי להוכיח 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ הפיכה נראה כי 
+\begin_inset Formula $Ker\left(XX^{T}\right)=\left\{ \bar{0}\right\} $
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $v\in Ker\left(XX^{T}\right)$
+\end_inset
+
+, אזי 
+\begin_inset Formula $XX^{T}v=0$
+\end_inset
+
+, כלומר 
+\begin_inset Formula 
+\[
+XX^{T}v=0=v^{T}XX^{T}v=\left(X^{T}v\right)^{T}X^{T}v=\left\langle X^{T}v,X^{T}v\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מחוקי מכפלה פנימית מתקיים 
+\begin_inset Formula $X^{T}v=0$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $v\in Ker\left(X^{T}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+0=X^{T}v=\begin{bmatrix}\left\langle x_{1},v\right\rangle \\
+\\
+\vdots\\
+\\
+\left\langle x_{m},v\right\rangle 
+\end{bmatrix}
+\]
+
+\end_inset
+
+כלומר נובע כי 
+\begin_inset Formula $v$
+\end_inset
+
+ אורתוגונלי לוקטורים- 
+\begin_inset Formula $\left\{ x_{1},...,x_{m}\right\} $
+\end_inset
+
+, אמנם מכיוון ש 
+\begin_inset Formula $span\left\{ x_{1},..,x_{m}\right\} =\mathbb{R}^{d}$
+\end_inset
+
+ ו
+\begin_inset Formula $v\in\mathbb{R}^{d}$
+\end_inset
+
+ בהכרח 
+\begin_inset Formula $v=0$
+\end_inset
+
+ )רק וקטור האפס יכול להיות אורתוגונלי לכל הוקטורים במרחב(.
+ קיבלנו עבור בחירת 
+\begin_inset Formula $v$
+\end_inset
+
+ בגרעין של 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ כי הוא בהכרח וקטור האפס ועל כן 
+\begin_inset Formula $dim\left(Ker\left(XX^{T}\right)\right)=0$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ הפיכה כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\boldsymbol{c}$
+\end_inset
+
+
+\series bold
+.
+ 
+\series default
+נראה כי הפתרון 
+\begin_inset Formula $\hat{w}=X^{T\dagger}y$
+\end_inset
+
+ הוא פתרון מינימלי עבור נורמת 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $\bar{w}$
+\end_inset
+
+ פתרון כלשהו למערכת המשוואת 
+\begin_inset Formula $XX^{T}\cdot x=Xy$
+\end_inset
+
+ .
+ צ.ל כי 
+\begin_inset Formula $\left|\left|\hat{w}\right|\right|_{2}\leq\left|\left|\bar{w}\right|\right|_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+נתון כי 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ אינה הפיכה, כלומר הדרגה שלה קטנה ממש מ-
+\begin_inset Formula $d$
+\end_inset
+
+.
+ נסמנה ב 
+\begin_inset Formula $k<d$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+נשים לב כי כיוון ש 
+\begin_inset Formula $\bar{w}$
+\end_inset
+
+ פתרון חוקי של מערכת המשוואות 
+\begin_inset Formula $XX^{T}\cdot x=Xy$
+\end_inset
+
+ הוא חייב להזדהות עם 
+\begin_inset Formula $k$
+\end_inset
+
+ הקואורדינטות הראשונות של 
+\begin_inset Formula $\hat{w}$
+\end_inset
+
+ )המקדמים שאינם חופשיים(.
+ בעבור שאר הקואורדינטית נוכל להתייחס אליהן כמקדמים חופשיים ולכן יש להן אינסוף
+ אפשרויות.
+ נסמן:
+\begin_inset Formula 
+\[
+\bar{w}=\begin{bmatrix}a_{1}\\
+\vdots\\
+a_{k}\\
+b_{k+1}\\
+\vdots\\
+b_{d}
+\end{bmatrix},\,\,\,\,\hat{w}=\begin{bmatrix}a_{1}\\
+\vdots\\
+a_{k}\\
+c_{k+1}\\
+\vdots\\
+c_{d}
+\end{bmatrix}
+\]
+
+\end_inset
+
+אזי- 
+\begin_inset Formula $\left|\left|\bar{w}\right|\right|_{2}=\sqrt{a_{1}^{2}+....+a_{k}^{2}+c_{k+1}^{2}+...+c_{d}^{2}}$
+\end_inset
+
+ו- 
+\begin_inset Formula $\left|\left|\hat{w}\right|\right|_{2}=\sqrt{a_{1}^{2}+....+a_{k}^{2}+b_{k+1}^{2}+...+b_{d}^{2}}$
+\end_inset
+
+ לכן מספיק להוכיח כי: 
+\begin_inset Formula $\sqrt{b_{k+1}^{2}+...+b_{d}^{2}}\leq\sqrt{c_{k+1}^{2}+...+c_{d}^{2}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+עבור כל בחירה של 
+\begin_inset Formula $c_{k+1},...,c_{d}$
+\end_inset
+
+.
+ לכן אם נראה כי 
+\begin_inset Formula $b_{k+1}=...=b_{d}=0$
+\end_inset
+
+ כיוון ש: 
+\begin_inset Formula $\sqrt{c_{k+1}^{2}+...+c_{d}^{2}}\geq0$
+\end_inset
+
+ נוכיח את הטענה.
+\begin_inset Newline newline
+\end_inset
+
+נשים לב כי מספר הערכים הסינגולרים של המטריצה 
+\begin_inset Formula $XX^{T}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $k$
+\end_inset
+
+ כדרגת המטריצה ולכן יש למטריצה 
+\begin_inset Formula $\Sigma^{\dagger T}\in M_{d\times m}\left(\mathbb{R}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $d-k>0$
+\end_inset
+
+ שורות אפסים:
+\begin_inset Formula 
+\[
+\Sigma^{\dagger T}=\begin{bmatrix}\frac{1}{\sigma_{1}}\\
+ & \ddots\\
+ &  & \frac{1}{\sigma_{k}}\\
+ &  &  & 0\\
+ &  &  &  & \ddots\\
+ &  &  &  &  & 0\\
+ &  &  &  &  & \vdots\\
+ &  &  &  &  & 0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מהגדרה מתקיים 
+\begin_inset Formula $X^{T\dagger}=U\Sigma^{\dagger T}V^{T}$
+\end_inset
+
+ לכן: 
+\begin_inset Formula 
+\[
+\begin{bmatrix}a_{1}\\
+\vdots\\
+a_{k}\\
+b_{k+1}\\
+\vdots\\
+b_{d}
+\end{bmatrix}=\hat{w}=X^{T\dagger}y=U\Sigma^{\dagger T}V^{T}y=U\Sigma^{\dagger T}\begin{bmatrix}\left\langle v_{1},y\right\rangle \\
+\\
+\vdots\\
+\\
+\left\langle v_{m},y\right\rangle 
+\end{bmatrix}=U\begin{bmatrix}\frac{1}{\sigma_{1}}\\
+ & \ddots\\
+ &  & \frac{1}{\sigma_{k}}\\
+ &  &  & 0\\
+ &  &  &  & \ddots\\
+ &  &  &  &  & 0\\
+ &  &  &  &  & \vdots\\
+ &  &  &  &  & 0
+\end{bmatrix}\begin{bmatrix}\left\langle v_{1},y\right\rangle \\
+\\
+\vdots\\
+\\
+\left\langle v_{m},y\right\rangle 
+\end{bmatrix}=U\cdot\begin{bmatrix}\frac{1}{\sigma_{1}}\left\langle v_{1},y\right\rangle \\
+\vdots\\
+\frac{1}{\sigma_{k}}\left\langle v_{k},y\right\rangle \\
+0\\
+\vdots\\
+0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אין צורך להמשיך את הכפל ב- 
+\begin_inset Formula $U$
+\end_inset
+
+ כי כבר ניתן לראות שעבור הערכים 
+\begin_inset Formula $b_{k+1},...b_{d}$
+\end_inset
+
+ אנו מקבלים 
+\begin_inset Formula $b_{k+1}=...=b_{d}=0$
+\end_inset
+
+ שכן באותן קואורדינטות לפני הכפל ב
+\begin_inset Formula $U$
+\end_inset
+
+ יש לנו כבר אפסים.
+ וזאת כנדרש להוכיח.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\chi=\left\{ 0,1\right\} ^{n}$
+\end_inset
+
+ו- 
+\begin_inset Formula $y=\left\{ 0,1\right\} $
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $I\subseteq[n]$
+\end_inset
+
+ נגדיר:
+\begin_inset Formula 
+\[
+\forall x\in\chi\,\,h_{I}\left(x\right)=\left(\sum_{i\in I}x_{i}\right)mod\,2
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מה ה-
+\begin_inset Formula $VCdimention$
+\end_inset
+
+של המחלקה 
+\begin_inset Formula $H_{parity}=\left\{ h_{I}|\,I\subseteq[n]\right\} $
+\end_inset
+
+? 
+\begin_inset Newline newline
+\end_inset
+
+טענה 
+\begin_inset Formula $vcd=n$
+\end_inset
+
+.
+ נראה זאת בשני שלבים:
+\begin_inset Newline newline
+\end_inset
+
+
+\numeric on
+1
+\numeric off
+.
+ 
+\begin_inset Formula $vcd\geq n$
+\end_inset
+
+ נגדיר את הקבוצה הבאה:
+\begin_inset Formula 
+\[
+C=\left\{ e_{i}|for\,all\,1\leq i\leq n\right\} 
+\]
+
+\end_inset
+
+כלומר קבוצה של וקטורי היחידה.
+ ברור כי 
+\begin_inset Formula $\left|C\right|=n$
+\end_inset
+
+.
+ תהי קומבינציה אפשרית של תוצאות 
+\begin_inset Formula $y_{1},...,y_{n}$
+\end_inset
+
+ לקבוצה 
+\begin_inset Formula $C$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(c_{i}\right)=y_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $y_{i}\in\left\{ 0,1\right\} $
+\end_inset
+
+, נוכל לבחור 
+\begin_inset Formula $I$
+\end_inset
+
+ )כלומר 
+\begin_inset Formula $h_{I}$
+\end_inset
+
+( בצורה הבאה:
+\begin_inset Formula 
+\[
+I=\left\{ i\,|\,i\in\left[n\right],and\,f\left(c_{i}\right)=1\right\} 
+\]
+
+\end_inset
+
+כלומר אנו בוחרים את כל האינדקסים של וקטורי היחידה שלפי 
+\begin_inset Formula $f$
+\end_inset
+
+ נשלחים ל
+\begin_inset Formula $1$
+\end_inset
+
+.
+ נקבל לכל 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(c_{i}\right)=1$
+\end_inset
+
+ כי: 
+\begin_inset Formula $h_{I}\left(c_{i}\right)=1+\sum_{i\neq j\in I}0=1$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(c_{i}\right)=0$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $h_{I}\left(c_{i}\right)=\sum_{j\in I}0\underset{i\notin I}{\underbrace{=}}\sum_{i\neq j\in I}0=0$
+\end_inset
+
+ כנדרש.
+ כלומר 
+\begin_inset Formula $H$
+\end_inset
+
+ מנתצת את 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\numeric on
+2
+\numeric off
+.
+ 
+\begin_inset Formula $vcd\leq n$
+\end_inset
+
+ הוכחנו בתרגול כי 
+\begin_inset Formula $VCdim\left(H\right)\leq log_{2}\left|H\right|$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $log_{2}\left|H\right|=log_{2}\left(2^{n}\right)=n$
+\end_inset
+
+ ועל כן 
+\begin_inset Formula $vcd\leq n$
+\end_inset
+
+ כנדרש.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+מסקנה-
+\bar default
+ 
+\begin_inset Formula $\boldsymbol{VCdim\left(H\right)=n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(\left[a_{i},b_{i}\right]\right)_{i=1}^{k}$
+\end_inset
+
+ סט של מקטעים על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $A=\bigcup_{i=1}^{k}\left[a_{i},b_{i}\right]$
+\end_inset
+
+, מחלקת ההיפותזות 
+\begin_inset Formula $H_{k-intervals}$
+\end_inset
+
+ כוללת את הפונקציות:
+\begin_inset Formula 
+\[
+h_{A}\left(x\right)=\begin{cases}
+0 & x\notin A\\
+1 & x\in A
+\end{cases}
+\]
+
+\end_inset
+
+בעבור כל הבחירות האפשריות של 
+\begin_inset Formula $k$
+\end_inset
+
+ אינטרוולים.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(a$
+\end_inset
+
+ בעבור 
+\begin_inset Formula $k$
+\end_inset
+
+ קבוע מצאו את ה- 
+\begin_inset Formula $VCdim$
+\end_inset
+
+ של 
+\begin_inset Formula $H_{k-intervals}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+טענה
+\bar default
+- 
+\begin_inset Formula $VCdim\left(H_{k-intervals}\right)=2k$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+ראשית נראה
+\series default
+ 
+\begin_inset Formula $\boldsymbol{VCdim\left(H_{k-intervals}\right)\geq2k}$
+\end_inset
+
+: תהי קבוצה 
+\begin_inset Formula $C$
+\end_inset
+
+ כלשהי של נקודות על הישר 
+\begin_inset Formula $C=\left\{ c_{1},...,c_{2k}\right\} $
+\end_inset
+
+כך ש- 
+\begin_inset Formula $\left|C\right|=2k$
+\end_inset
+
+ו- 
+\begin_inset Formula $c_{1}<c_{2}<....<c_{2k}$
+\end_inset
+
+ ויהיו 
+\begin_inset Formula $y_{1},...y_{2k}$
+\end_inset
+
+ פלטים אפשריים עבור הנקודות 
+\begin_inset Formula $\forall i\in\left[2k\right],\,f\left(c_{i}\right)=y_{i}$
+\end_inset
+
+, נרצה למצוא 
+\begin_inset Formula $k$
+\end_inset
+
+ קטעים 
+\begin_inset Formula $\left(\left[a_{i},b_{i}\right]\right)_{i=1}^{k}$
+\end_inset
+
+ על הישר כך שיתקיים 
+\begin_inset Formula $A=\bigcup_{i=1}^{k}\left[a_{i},b_{i}\right]$
+\end_inset
+
+ ו- 
+\begin_inset Formula $h_{A}\left(c_{i}\right)=y_{i}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\in\left[2k\right]$
+\end_inset
+
+.
+ נרצה להגדיר את 
+\begin_inset Formula $\left[a_{i},b_{i}\right]$
+\end_inset
+
+ בצורה הבאה: 
+\begin_inset Newline newline
+\end_inset
+
+נגדיר תחילה 
+\begin_inset Formula $\tilde{C}=C$
+\end_inset
+
+ ונבחר את הקטעים לפי הכלל הבא: 
+\begin_inset Formula $a_{i}=min\left\{ c_{i}\in\tilde{C}\,|\;f\left(c_{i}\right)=1\right\} $
+\end_inset
+
+ , נמשיך לרוץ על 
+\begin_inset Formula $\tilde{C}$
+\end_inset
+
+ לפי הסדר של האיברים ונוציא ממנה איברים כל עוד מתקיים 
+\begin_inset Formula $f\left(c_{i}\right)=1$
+\end_inset
+
+.
+ את האיבר האחרון שהוצאנו נגדיר להיות 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ )אם הוצאנו רק איבר אחד נוכל להגדיר קטע 
+\begin_inset Formula $\left[a_{i},a_{i}\right]$
+\end_inset
+
+כקטע בעל נקודה בודדת(.
+ כך נמשיך עד ש
+\begin_inset Formula $\tilde{C}-$
+\end_inset
+
+ תהיה קבוצה ריקה.
+ את יתר הקטעים שלא הגדרנו )במידה ויש כאלה( נוכל להגדיר באופן עוקב כך שהם
+ מתחילים 
+\series bold
+אחרי
+\series default
+ האיבר המקסימלי ב- 
+\begin_inset Formula $C$
+\end_inset
+
+ )לא נמצא בהם אף איבר(.
+ נשים לב כי תהליך זה מתאפשר כיוון שלכל היותר נצטרך להגדיר קטע חדש 
+\begin_inset Formula $k$
+\end_inset
+
+ פעמים במקרה שבו הפלט שלנו יהיה מהצורה 
+\begin_inset Formula $\left\{ 1,0,1,0,.....,1,0\right\} $
+\end_inset
+
+ ואז בכל קטע יהיה בדיוק איבר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ זוהי קבוצה בגודל 
+\begin_inset Formula $2k$
+\end_inset
+
+ ש-
+\begin_inset Formula $H_{k-intervals}$
+\end_inset
+
+ מנתצת ולכן 
+\begin_inset Formula $VCdim\left(H_{k-intervals}\right)\geq2k$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+שנית נראה כי 
+\series default
+
+\begin_inset Formula $\boldsymbol{VCdim\left(H_{k-intervals}\right)\leq2k}$
+\end_inset
+
+: נניח בשלילה כי קיים סט 
+\begin_inset Formula $C=\left\{ c_{1},..,c_{2k+1}\right\} \subset X$
+\end_inset
+
+ )נניח כי 
+\begin_inset Formula $C$
+\end_inset
+
+ מסודר מקטן לגדול למען נוחות ההוכחה( ש-
+\begin_inset Formula $H_{k-intervals}$
+\end_inset
+
+ מנתצת אותו.
+ אזי לכל 
+\begin_inset Formula $y_{1},..,y_{2k+1}\in\left\{ 0,1\right\} $
+\end_inset
+
+ קיימת 
+\begin_inset Formula $A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $h_{A}\left(c_{i}\right)=y_{i}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\in\left[2k+1\right]$
+\end_inset
+
+.
+ בפרט עבור 
+\begin_inset Formula $\tilde{Y}=\left\{ y_{i}=\left(i\right)mod2|\,1\leq i\leq2k+1\right\} $
+\end_inset
+
+.
+ מההנחה בשלילה מתקיים 
+\begin_inset Formula $h_{A}\left(c_{i}\right)=y_{i}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\in\left[2k+1\right]$
+\end_inset
+
+.
+ אמנם נשים לב כי מספר האפסים ב-
+\begin_inset Formula $\tilde{Y}$
+\end_inset
+
+הוא בדיוק 
+\begin_inset Formula $k$
+\end_inset
+
+ )מספר המספרים הזוגיים בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $2k+1$
+\end_inset
+
+( ומספר האחדות הוא 
+\begin_inset Formula $k+1$
+\end_inset
+
+.
+ כלומר יש 
+\begin_inset Formula $k+1$
+\end_inset
+
+ איברים ב-
+\begin_inset Formula $C$
+\end_inset
+
+ השייכים ל
+\begin_inset Formula $A$
+\end_inset
+
+ כך שבינהם איברים שלא שייכים ל- 
+\begin_inset Formula $A$
+\end_inset
+
+ )מכך שהאיברים ב 
+\begin_inset Formula $C$
+\end_inset
+
+ מסודרים לפי הגודל(, כלומר קיבלנו שיש 
+\begin_inset Formula $k+1$
+\end_inset
+
+ תתי קטעים זרים ב 
+\begin_inset Formula $A$
+\end_inset
+
+ וזאת בסתירה להגדרת 
+\begin_inset Formula $A$
+\end_inset
+
+ כאיחוד של 
+\begin_inset Formula $k$
+\end_inset
+
+ קטעים.
+ מכאן נובע כי 
+\begin_inset Formula $VCdim\left(H_{k-intervals}\right)\leq2k$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+המסקנה- 
+\begin_inset Formula $VCdim\left(H_{k-intervals}\right)=2k$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(b$
+\end_inset
+
+ הראו כי אם 
+\begin_inset Formula $k$
+\end_inset
+
+ לא מוגבל, 
+\begin_inset Formula $H_{k-intervals}$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $VCdim\left(H_{k-intervals}\right)=\infty$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $C\subset X$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|C\right|=d$
+\end_inset
+
+ עבור 
+\begin_inset Formula $d\in\mathbb{N}$
+\end_inset
+
+.
+ אזי נגדיר 
+\begin_inset Formula $k=\frac{d}{2}$
+\end_inset
+
+, ומהסעיף הקודם ראינו כי בעזרת 
+\begin_inset Formula $\frac{d}{2}$
+\end_inset
+
+ אינטרוולים ניתן לנתץ קבוצה 
+\begin_inset Formula $C$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $d$
+\end_inset
+
+ )בסעיף הקודם 
+\begin_inset Formula $d=2k$
+\end_inset
+
+ וראינו 
+\begin_inset Formula $-VCdim\left(H_{k-intervals}\right)\geq2k$
+\end_inset
+
+בחרנו את הקטעים בצורה חכמה כך שכל מי שקיבל 
+\begin_inset Formula $1$
+\end_inset
+
+ יהיה ב
+\begin_inset Formula $A$
+\end_inset
+
+ ומי שקיבל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לא יהיה שייך ל- 
+\begin_inset Formula $A$
+\end_inset
+
+(.
+ זה נכון עבור כל 
+\begin_inset Formula $d$
+\end_inset
+
+ טבעי 
+\begin_inset Newline newline
+\end_inset
+
+כלומר ניתן לנתץ קבוצה 
+\begin_inset Formula $C$
+\end_inset
+
+ בכל גודל אפשרי, ולכן 
+\begin_inset Formula $VCdim\left(H_{k-intervals}\right)=\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+הראו כי 
+\begin_inset Formula $VCdim\left(HS_{d}\right)=d+1$
+\end_inset
+
+.
+ מתקיים:
+\begin_inset Formula 
+\[
+h_{w,b}\left(x\right)=sgn\left(\left\langle w,x\right\rangle +b\right)=sgn\left(\left\langle \begin{bmatrix}|\\
+w\\
+|\\
+b
+\end{bmatrix},\begin{bmatrix}|\\
+x\\
+|\\
+1
+\end{bmatrix}\right\rangle \right)
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+ראשית, נראה 
+\begin_inset Formula $\boldsymbol{VCdim\left(HS_{d}\right)\geq d+1}$
+\end_inset
+
+
+\series default
+: תהי 
+\begin_inset Formula $C=\left\{ c_{i}=e_{i}|1\leq i\leq d\right\} \cup\left\{ c_{d+1}=\bar{0}\right\} $
+\end_inset
+
+ כאשר- 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ הוא וקטור יחידה.
+ יהי 
+\begin_inset Formula $y_{1},...,y_{d+1}\in\left\{ -1,1\right\} $
+\end_inset
+
+ תוצאות אפשריות עבור 
+\begin_inset Formula $c_{1},...,c_{d+1}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+נחלק למקרים:
+\bar default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\numeric on
+1
+\numeric off
+.
+ אם 
+\begin_inset Formula $y_{d+1}=1$
+\end_inset
+
+: נגדיר 
+\begin_inset Formula $b=1$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\forall1\leq i\leq d,\,\left[w\right]_{i}=0$
+\end_inset
+
+ אם 
+\begin_inset Formula $y_{i}=1$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\left[w\right]_{i}=-2$
+\end_inset
+
+ אם 
+\begin_inset Formula $y_{i}=-1$
+\end_inset
+
+.
+ אזי נקבל לכל 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+: 
+\begin_inset Formula $h_{w,b}\left(c_{i}\right)=\begin{cases}
+sgn\left(1\right)=1 & y_{i}=1\\
+sgn\left(-2+1\right)=-1 & y_{i}=-1
+\end{cases}$
+\end_inset
+
+ כנדרש
+\begin_inset Newline newline
+\end_inset
+
+
+\numeric on
+2
+\numeric off
+.
+ אם 
+\begin_inset Formula $y_{d+1}=-1$
+\end_inset
+
+: נגדיר 
+\begin_inset Formula $b=-1$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\forall1\leq i\leq d,\,\left[w\right]_{i}=2$
+\end_inset
+
+ אם 
+\begin_inset Formula $y_{i}=1$
+\end_inset
+
+ ו- 
+\begin_inset Formula $\left[w\right]_{i}=0$
+\end_inset
+
+ אם 
+\begin_inset Formula $y_{i}=-1$
+\end_inset
+
+.
+ אזי נקבל לכל 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+: 
+\begin_inset Formula $h_{w,b}\left(c_{i}\right)=\begin{cases}
+sgn\left(2-1\right)=1 & y_{i}=1\\
+sgn\left(-1\right)=-1 & y_{i}=-1
+\end{cases}$
+\end_inset
+
+ כנדרש 
+\begin_inset Newline newline
+\end_inset
+
+כלומר לכל קלסיפיקציה של האיברים ב- 
+\begin_inset Formula $C$
+\end_inset
+
+ נוכל למצוא 
+\begin_inset Formula $w,b$
+\end_inset
+
+ מתאימים כך שלכל 
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\begin_inset Formula $h_{w,b}\left(c_{i}\right)=y_{i}$
+\end_inset
+
+ - על כן 
+\begin_inset Formula $H$
+\end_inset
+
+ מנתצת את 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+שנית, נראה 
+\series default
+
+\begin_inset Formula $\boldsymbol{VCdim\left(HS_{d}\right)\leq d+1}$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+נשים לב כי ראינו ש- 
+\begin_inset Formula 
+\[
+h_{w,b}\left(x\right)=sgn\left(\left\langle w,x\right\rangle +b\right)=sgn\left(\left\langle \begin{bmatrix}|\\
+w\\
+|\\
+b
+\end{bmatrix},\begin{bmatrix}|\\
+x\\
+|\\
+1
+\end{bmatrix}\right\rangle \right)
+\]
+
+\end_inset
+
+כלומר ניתן להתייחס בצורה שקולה ל
+\begin_inset Formula $HS_{d}$
+\end_inset
+
+ כמחלקה של 
+\begin_inset Formula $homogeneous\,half\,spaces$
+\end_inset
+
+ ב- 
+\begin_inset Formula $\mathbb{R}^{d+1}$
+\end_inset
+
+.
+ ראינו בתרגול כי המימד 
+\begin_inset Formula $VC$
+\end_inset
+
+של המחלקה הזאת הוא 
+\begin_inset Formula $d+1$
+\end_inset
+
+ ועל כן לא קיימת 
+\begin_inset Formula $C$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $d+2$
+\end_inset
+
+ ש- 
+\begin_inset Formula $HS_{d}$
+\end_inset
+
+ יכולה לנתץ מכך שלא קיימת 
+\begin_inset Formula $C$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $d+2$
+\end_inset
+
+ ש- 
+\begin_inset Formula $H=\left\{ h_{w}:h_{w}\left(x\right)=sign\left(\left\langle w,x\right\rangle \right),w\in\mathbb{R}^{d+1}\right\} $
+\end_inset
+
+ יכולה לנתץ.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+13
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(a$
+\end_inset
+
+הראו כי אם 
+\begin_inset Formula $H$
+\end_inset
+
+ היא 
+\begin_inset Formula $agnostic\,PAC\,learnable$
+\end_inset
+
+ אז היא גם 
+\begin_inset Formula $PAC\,learnable$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נניח כי 
+\begin_inset Formula $H$
+\end_inset
+
+ היא 
+\begin_inset Formula $agnostic\,PAC\,learnable$
+\end_inset
+
+ , אזי קיימת 
+\begin_inset Formula $m_{H}:\left(0,1\right)^{2}\rightarrow\mathbb{N}$
+\end_inset
+
+ ואלגוריתם לומד 
+\begin_inset Formula $A$
+\end_inset
+
+ עם התכונה- לכל 
+\begin_inset Formula $\varepsilon,\delta\in\left(0,1\right)$
+\end_inset
+
+ לכל התפלגות 
+\begin_inset Formula $D$
+\end_inset
+
+ של 
+\begin_inset Formula $X\times Y$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $m\geq m_{H}\left(\varepsilon,\delta\right)$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+D^{m}\left\{ S_{m}|L_{D}\left(A_{m}\left(S\right)\right)\leq min_{h'\in H}L_{D}\left(h\right)+\varepsilon\right\} \geq1-\delta
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $S=\left\{ \left(x_{1},y_{1}\right),...\left(x_{m},y_{m}\right)\right\} $
+\end_inset
+
+ דגימות 
+\begin_inset Formula $iid$
+\end_inset
+
+ מההתפלגות 
+\begin_inset Formula $D$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $D$
+\end_inset
+
+ התפלגות לא ידועה מעל 
+\begin_inset Formula $X$
+\end_inset
+
+, ו-
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציית מטרה.
+ אזי נוכל להניח כי 
+\begin_inset Formula $D$
+\end_inset
+
+ היא התפלגות משותפת על 
+\begin_inset Formula $X\times\left\{ 0,1\right\} $
+\end_inset
+
+ )כלומר 
+\begin_inset Formula $Y=\left\{ 0,1\right\} $
+\end_inset
+
+( כאשר ההסתברות המותנית של 
+\begin_inset Formula $y$
+\end_inset
+
+ בהינתן 
+\begin_inset Formula $x$
+\end_inset
+
+ נקבעת באופן דטרמיניסטי על ידי 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ מהנחת הריאזביליות )אחרת לא ניתן לדבר על למידת 
+\begin_inset Formula $PAC$
+\end_inset
+
+( מתקיים 
+\begin_inset Formula $min_{h'\in H}L_{D}\left(h\right)=0$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $\varepsilon,\delta$
+\end_inset
+
+, אזי לכל 
+\begin_inset Formula $m\geq m_{H}\left(\varepsilon,\delta\right)$
+\end_inset
+
+ אם נשתמש באלגוריתם 
+\begin_inset Formula $A$
+\end_inset
+
+ ונייצר עבורו סט 
+\begin_inset Formula $S$
+\end_inset
+
+ של 
+\begin_inset Formula $m$
+\end_inset
+
+ דגימות המתויגות על ידי 
+\begin_inset Formula $f$
+\end_inset
+
+, נקבל: 
+\begin_inset Formula 
+\[
+D^{m}\left\{ S_{m}|L_{D}\left(A_{m}\left(S\right)\right)\leq min_{h'\in H}L_{D}\left(h\right)+\varepsilon\right\} =D^{m}\left\{ S_{m}|L_{D}\left(A_{m}\left(S\right)\right)\leq0+\varepsilon\right\} \geq1-\delta
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $H$
+\end_inset
+
+ היא למידה 
+\begin_inset Formula $PAC$
+\end_inset
+
+ מהגדרה.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(b$
+\end_inset
+
+הראו כי אם 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא אלגוריתם למידה 
+\begin_inset Formula $agnostic\,PAC$
+\end_inset
+
+ מוצלח עבור 
+\begin_inset Formula $H$
+\end_inset
+
+ אזי הוא גם אלגוריתם למידה 
+\begin_inset Formula $PAC$
+\end_inset
+
+ מוצלח עבור 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+ראינו בסעיף הקודם שבשימוש באותו האלגוריתם 
+\begin_inset Formula $A$
+\end_inset
+
+ שהיה מוצלח עבור למידה 
+\begin_inset Formula $agnostic\,PAC$
+\end_inset
+
+ הצלחנו להוציא פונקציית מטרה 
+\begin_inset Formula $h$
+\end_inset
+
+ גם בלמידה 
+\begin_inset Formula $PAC$
+\end_inset
+
+ לאותה 
+\begin_inset Formula $H$
+\end_inset
+
+ שהיה מוצלח.
+ כלומר עבור אותו אלגוריתם 
+\begin_inset Formula $A$
+\end_inset
+
+ ראינו שכאשר הוא היה אלגוריתם מוצלח עבור 
+\begin_inset Formula $agnostic\,PAC$
+\end_inset
+
+ הוא היה מוצלח גם עבור למידה 
+\begin_inset Formula $PAC$
+\end_inset
+
+ כנדרש.
+ 
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\numeric off
+: 
+\end_layout
+
+\begin_layout Standard
+הראו כי 
+\begin_inset Formula $m_{H}$
+\end_inset
+
+ היא מונוטונית 
+\series bold
+לא עולה 
+\series default
+עבור כל אחד מהפרמטים שלה 
+\begin_inset Formula $\varepsilon,\delta$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ברמה האינטואיטיבית- אם אנחנו מקטינים את אחד הפרמטרים האלו אנו מחמירים את
+ הדרישה ולכן נצטרך עוד דגימות
+\begin_inset Newline newline
+\end_inset
+
+
+\numeric on
+1
+\numeric off
+.
+ נראה כי בהינתן 
+\begin_inset Formula $\delta\in\left(0,1\right)$
+\end_inset
+
+ ו- 
+\begin_inset Formula $0<\varepsilon_{1}\leq\varepsilon_{2}<1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $m_{H}\left(\varepsilon_{1},\delta\right)\geq m_{H}\left(\varepsilon_{2},\delta\right)$
+\end_inset
+
+.
+ יהיו 
+\begin_inset Formula $\varepsilon_{1},\varepsilon_{2}$
+\end_inset
+
+ המקיימים - 
+\begin_inset Formula $0<\varepsilon_{1}\leq\varepsilon_{2}<1$
+\end_inset
+
+, אזי מהגדרת למידת 
+\begin_inset Formula $PAC$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\mathbb{P}\left\{ L_{D,f}\left(A\left(S_{m}\right)\right)<\varepsilon_{1}\right\} \geq1-\delta\,iff\,m\geq m_{H}\left(\varepsilon_{1},\delta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{P}\left\{ L_{D,f}\left(A\left(S_{m}\right)\right)<\varepsilon_{2}\right\} \geq1-\delta\,iff\,m\geq m_{H}\left(\varepsilon_{2},\delta\right)
+\]
+
+\end_inset
+
+ אמנם ברור כי כיוון ש 
+\begin_inset Formula $\varepsilon_{1}\leq\varepsilon_{2}$
+\end_inset
+
+, לכל 
+\begin_inset Formula $m$
+\end_inset
+
+ אם 
+\begin_inset Formula $L_{D,f}\left(A\left(S_{m}\right)\right)<\varepsilon_{1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $L_{D,f}\left(A\left(S_{m}\right)\right)<\varepsilon_{2}$
+\end_inset
+
+.
+ בפרט כל 
+\begin_inset Formula $m$
+\end_inset
+
+ שמקיים את המשוואה הראשונה מקיים את המשוואה השניה, כלומר כל 
+\begin_inset Formula $m\geq m_{H}\left(\varepsilon_{1},\delta\right)$
+\end_inset
+
+ מקיים גם 
+\begin_inset Formula $m\geq m_{H}\left(\varepsilon_{2},\delta\right)$
+\end_inset
+
+ ועל כן 
+\begin_inset Formula $m_{H}\left(\varepsilon_{1},\delta\right)\geq m_{H}\left(\varepsilon_{2},\delta\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\numeric on
+2
+\numeric off
+.
+ נראה כי בהינתן 
+\begin_inset Formula $\varepsilon\in\left(0,1\right)$
+\end_inset
+
+ ו- 
+\begin_inset Formula $0<\delta_{1}\leq\delta_{2}<1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $m_{H}\left(\varepsilon,\delta_{1}\right)\geq m_{H}\left(\varepsilon,\delta_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+16
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $H_{1},H_{2}$
+\end_inset
+
+ שתי מחלקות לקלסיפיקציה בינארית כך ש 
+\begin_inset Formula $H_{1}\subseteq H_{2}$
+\end_inset
+
+, הראו כי 
+\begin_inset Formula $VCdim\left(H_{1}\right)\leq VCdim\left(H_{2}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $C\subseteq X$
+\end_inset
+
+, נניח כי 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ מנתצת את 
+\begin_inset Formula $C$
+\end_inset
+
+, אזי נראה כי בהכרח 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+ מנתצת את 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ אם נכון הדבר הרי ברור כי 
+\begin_inset Formula $VCdim\left(H_{1}\right)\leq VCdim\left(H_{2}\right)$
+\end_inset
+
+ )כי אם כל קבוצה ש
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ יכולה לנתץ גם 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+ יכולה לנתץ אז הקבוצה הכי גדולה ש 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ מנתצת גם 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+ מנתצת ועל פי הגודל שלה נקבע ה
+\begin_inset Formula $VCdim$
+\end_inset
+
+(.
+\begin_inset Newline newline
+\end_inset
+
+כיוון ש 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ מנתצת את 
+\begin_inset Formula $C$
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $\left|H_{1_{C}}\right|=2^{\left|C\right|}$
+\end_inset
+
+.
+ נשים לב כי כיוון ש 
+\begin_inset Formula $H_{1}\subseteq H_{2}$
+\end_inset
+
+ ו- 
+\begin_inset Formula $H_{1_{C}}\subseteq H_{1}$
+\end_inset
+
+ נובע 
+\begin_inset Formula $H_{1_{C}}\subseteq H_{2}$
+\end_inset
+
+.
+ לכן נוכל להגדיר 
+\begin_inset Formula $H_{2_{C}}=H_{1_{C}}$
+\end_inset
+
+ ואז ברור כי- 
+\begin_inset Formula $\left|H_{2_{C}}\right|=\left|H_{1_{C}}\right|=2^{\left|C\right|}$
+\end_inset
+
+ומזה נובע כי 
+\begin_inset Formula $H_{2}$
+\end_inset
+
+ מנתצת את 
+\begin_inset Formula $C$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_body
+\end_document
