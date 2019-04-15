@@ -104,6 +104,14 @@ def train_data_set():
     return train_error, test_error
 
 
+def get_corrolation():
+    plt.colorbar(plt.matshow(abs(df.corr())))
+    plt.xticks(range(len(df.columns)), df.columns, rotation='vertical')
+    plt.yticks(range(len(df.columns)), df.columns)
+
+    plt.show()
+
+
 def plot_errors(train_error, test_error):
     """
     plots both errors (test and train)
