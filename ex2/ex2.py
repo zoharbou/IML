@@ -104,7 +104,11 @@ def train_data_set():
     return train_error, test_error
 
 
-def get_corrolation():
+def get_correlation():
+    """
+    plots the corr relations between all the features
+    :return:
+    """
     plt.colorbar(plt.matshow(abs(df.corr())))
     plt.xticks(range(len(df.columns)), df.columns, rotation='vertical')
     plt.yticks(range(len(df.columns)), df.columns)
@@ -133,6 +137,6 @@ if __name__ == '__main__':
     clean_data()
     categorical = handle_categorical()
     df = df.join(categorical)
-    singular_values = get_singular_values()
+    # singular_values = get_singular_values()
     train_error, test_error = train_data_set()
     plot_errors(train_error, test_error)
