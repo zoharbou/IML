@@ -29,18 +29,18 @@ class LDA:
             for row in self.x_train[self.y_train == cl]:
                 row, mv = row.reshape(self.d, 1), mv.reshape(self.d, 1)
                 class_s_mat += (row - mv).dot((row - mv).T)
-            S += class_s_mat * (self.N_y[cl] - 1)
-        return S / (sum(self.N_y.values()) - len(self.classes))
+            S += class_s_mat
+        return S * (1 / sum(self.N_y.values()) - len(self.classes))
 
-    def get_global_cov(self):
-        overall_mean = np.mean(self.x_train, axis=0)
-        global_cov = np.zeros((self.d, self.d))
-        for i in range(len(self.mu_estimation)):
-            n = self.x_train[self.y_train == i + 1, :].shape[0]
-            mean_vec = self.mu_estimation[i].reshape(self.d, 1)  # make column vector
-            overall_mean = overall_mean.reshape(self.d, 1)  # make column vector
-            global_cov += n * (mean_vec - overall_mean).dot((mean_vec - overall_mean).T)
-        return global_cov
+    # def get_global_cov(self):
+    #     overall_mean = np.mean(self.x_train, axis=0)
+    #     global_cov = np.zeros((self.d, self.d))
+    #     for i in range(len(self.mu_estimation)):
+    #         n = self.x_train[self.y_train == i + 1, :].shape[0]
+    #         mean_vec = self.mu_estimation[i].reshape(self.d, 1)  # make column vector
+    #         overall_mean = overall_mean.reshape(self.d, 1)  # make column vector
+    #         global_cov += n * (mean_vec - overall_mean).dot((mean_vec - overall_mean).T)
+    #     return global_cov
 
     def fit(self, X, y):
         self.x_train = X
@@ -49,16 +49,16 @@ class LDA:
         self.classes = set(y)
         self.get_mu_est()
         self.cov_matrix = self.get_cov_matrix()
-        self.global_cov_matrix = self.get_global_cov()
+        # self.global_cov_matrix = self.get_global_cov()
         for cl, N in self.N_y.items():
             self.pi_y[cl] = N / len(self.x_train)
 
     def prob_y(self, x, y):
-        # return x.T * np.linalg.inv(self.cov_matrix) * self.mu_estimation[y] - 0.5 * self.mu_estimation[
-        #     y].T * np.linalg.inv(self.cov_matrix) * self.mu_estimation[y] + np.log(self.pi_y[y])
-        return np.matmul(self.mu_estimation[y], self.cov_matrix).dot(x) - (
-                    np.matmul(self.mu_estimation[y], self.cov_matrix).dot(self.mu_estimation[y]) * 0.5) + np.log(
-            self.pi_y[y])
+        return x.T * np.linalg.inv(self.cov_matrix) * self.mu_estimation[y] - 0.5 * self.mu_estimation[
+            y].T * np.linalg.inv(self.cov_matrix) * self.mu_estimation[y] + np.log(self.pi_y[y])
+        # return np.matmul(self.mu_estimation[y], self.cov_matrix).dot(x) - (
+        #         np.matmul(self.mu_estimation[y], self.cov_matrix).dot(self.mu_estimation[y]) * 0.5) + np.log(
+        #     self.pi_y[y])
 
     def predict(self, x):
         predictions = {}
